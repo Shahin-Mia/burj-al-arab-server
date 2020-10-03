@@ -32,7 +32,7 @@ app.listen(4000, () => {
 
 
 client.connect(err => {
-    const collection = client.db("burj-al-arab-bd").collection("bookings");
+    const collection = client.db("burj-al-arab-db").collection("bookings");
     console.log("DB connected successfully")
 
     app.post('/addBooking', (req, res) => {
